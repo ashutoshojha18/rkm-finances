@@ -27,11 +27,15 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="hero">
+    <section id="hero" className="hero">
       <div className="hero-background">
         <div className="hero-image-container">
           <img 
-            src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80" 
+            src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" 
+            srcSet="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=50 400w,
+                    https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60 800w,
+                    https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=70 1200w"
+            sizes="(max-width: 768px) 400px, (max-width: 1024px) 800px, 1200px"
             alt="Professional financial advisor consultation" 
             className="hero-image"
             loading="eager"

@@ -30,9 +30,17 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Always scroll to top on page load/refresh
+    window.scrollTo(0, 0);
+    
+    // Disable browser scroll restoration
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 300);
 
     return () => clearTimeout(timer);
   }, []);

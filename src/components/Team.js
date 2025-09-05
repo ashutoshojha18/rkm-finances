@@ -11,21 +11,21 @@ const Team = () => {
       name: "Rajeev Kumar Mishra",
       role: "Founder & CEO",
       experience: "18+ years in finance industry",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1755887245/pplx_project_search_images/ab71452932b222c34041272abdcbc58acb5dff93.png",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=60",
       expertise: ["Financial Advisory", "Debt Syndication"]
     },
     {
       name: "Senior Financial Advisor",
       role: "Lead Consultant",
       experience: "12+ years in banking sector",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1755401583/pplx_project_search_images/f8529433326e29a6535380a5ee58c52f349cd122.png",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=60",
       expertise: ["Corporate Finance", "Working Capital"]
     },
     {
       name: "Loan Specialist",
       role: "Retail Finance Head",
       experience: "8+ years in retail banking",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1754994731/pplx_project_search_images/c96c88751322e41a0a6cd24c1b286c93cfd5c3ba.png",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=60",
       expertise: ["Home Loans", "Personal Finance"]
     }
   ];
@@ -67,6 +67,7 @@ const Team = () => {
                   src={member.image} 
                   alt={member.name} 
                   className="team-image"
+                  loading="lazy"
                 />
                 <motion.div 
                   className="team-overlay"

@@ -11,21 +11,21 @@ const Testimonials = () => {
       text: "RKM Finances helped us secure project funding for our hospital expansion. Their expertise and professional approach made the entire process smooth and efficient.",
       author: "Dr. Amit Sharma",
       role: "Hospital Administrator",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1754744414/pplx_project_search_images/1d52af9827f3a6cd4a38f3380a094ccea924886f.png",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=60",
       rating: 5
     },
     {
       text: "Working capital solutions provided by RKM Finances have been instrumental in growing our business. Highly recommend their services for reliable financial solutions.",
       author: "Priya Gupta",
       role: "MSME Owner",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1754906684/pplx_project_search_images/d53e1847cf0212aea33d207263861dfe8aae8856.png",
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=60",
       rating: 5
     },
     {
       text: "The team at RKM Finances understands the complex needs of corporate financing. Their 18 years of experience truly shows in their expert advisory services.",
       author: "Rajesh Kumar",
       role: "Corporate Finance Head",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1755104127/pplx_project_search_images/e63974dde6fb6a48e973474ac2bb6d8d58904c7d.png",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=60",
       rating: 5
     }
   ];
@@ -89,6 +89,7 @@ const Testimonials = () => {
                       src={testimonials[currentSlide].image} 
                       alt="Client testimonial" 
                       className="testimonial-img"
+                      loading="lazy"
                     />
                   </div>
                   <div className="testimonial-text">

@@ -12,7 +12,7 @@ const Services = () => {
       id: 1,
       icon: <FiCreditCard />,
       title: "Debt Syndication",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60",
       subcategories: [
         {
           title: "Term Loans",
@@ -32,7 +32,7 @@ const Services = () => {
       id: 2,
       icon: <FiHome />,
       title: "Retail Loan Syndication",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60",
       items: [
         "Home Loan",
         "Loan Against Property",
@@ -46,7 +46,7 @@ const Services = () => {
       id: 3,
       icon: <FiShield />,
       title: "Insurance Services",
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60",
       items: ["Corporate Insurance", "Personal Insurance"],
       description: "Comprehensive insurance solutions to protect your business and personal assets with competitive premiums and excellent coverage."
     }
@@ -107,6 +107,7 @@ const Services = () => {
                   src={service.image} 
                   alt={service.title} 
                   className="service-img"
+                  loading="lazy"
                 />
               </div>
               

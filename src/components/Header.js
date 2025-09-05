@@ -80,8 +80,8 @@ const Header = () => {
                 </Link>
               </motion.div>
 
-              <div className="nav-center">
-                <nav className={`nav ${isMobileMenuOpen ? 'active' : ''}`}>
+              <div className={`nav-center ${isMobileMenuOpen ? 'active' : ''}`}>
+                <nav className="nav">
                   <button className="nav-link" onClick={() => { scrollToSection('hero'); setIsMobileMenuOpen(false); }}>Home</button>
                   <button className="nav-link" onClick={() => { scrollToSection('about'); setIsMobileMenuOpen(false); }}>About Us</button>
                   <button className="nav-link" onClick={() => { scrollToSection('services'); setIsMobileMenuOpen(false); }}>Services</button>
