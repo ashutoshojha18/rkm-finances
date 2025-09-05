@@ -1,0 +1,371 @@
+/* Mobile Responsive Styles */
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-detail {
+    padding: 0.8rem 0;
+  }
+  
+  .contact-form-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .testimonial-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .top-strip {
+    display: none;
+  }
+  
+  .top-strip-content {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .contact-item {
+    font-size: 0.75rem;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  .theme-toggle {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+  
+  .hero {
+    padding-top: 0;
+    margin-top: 0;
+  }
+  
+  .nav-center {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  .nav {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    padding: 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    border-top: 1px solid #e5e5e5;
+    z-index: 999;
+  }
+  
+  .nav.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-link {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+    width: 100%;
+    display: block;
+    color: #333333;
+  }
+  
+  .nav-link:hover {
+    background: #f8f9fa;
+    color: #4A90E2;
+  }
+  
+  .nav-link:hover::after {
+    display: none;
+  }
+  
+  [data-theme="dark"] .nav {
+    background: #1a1a1a;
+    border-top: 1px solid rgba(135, 206, 235, 0.3);
+  }
+  
+  [data-theme="dark"] .nav-link {
+    color: #ffffff;
+  }
+  
+  [data-theme="dark"] .nav-link:hover {
+    background: #333333;
+    color: #87CEEB;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+  }
+  
+  .hero-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .footer-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-section h3,
+  .footer-section h4 {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links {
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-social {
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .footer-contact {
+    text-align: center;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.85rem;
+    padding-top: 1.5rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  section {
+    padding: 2rem 0;
+  }
+  
+  .service-header {
+    padding: 1.5rem;
+  }
+  
+  .service-subcategories, .service-list {
+    padding: 1.5rem;
+  }
+  
+  .team-info {
+    padding: 1.5rem;
+  }
+  
+  .testimonial-content {
+    padding: 2rem;
+  }
+  
+  .contact-form {
+    padding: 1.5rem;
+  }
+  
+  .contact-detail {
+    padding: 1rem;
+  }
+}
+
+/* Landscape mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero {
+    min-height: 120vh;
+  }
+  
+  .hero-stats {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .header,
+  .scroll-top,
+  .whatsapp-float,
+  .hero-buttons,
+  .testimonial-nav,
+  .mobile-menu-toggle {
+    display: none !important;
+  }
+  
+  .hero {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+  
+  .hero-background {
+    display: none;
+  }
+  
+  .hero-content {
+    color: var(--text-primary);
+  }
+  
+  section {
+    padding: 1rem 0;
+    page-break-inside: avoid;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  :root {
+    --primary-blue: #0066CC;
+    --primary-blue-dark: #004499;
+    --text-primary: #000000;
+    --light-blue-bg: #F0F8FF;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .scroll-arrow {
+    animation: none;
+  }
+  
+  .cursor {
+    animation: none;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --white: #1a1a1a;
+    --off-white: #2a2a2a;
+    --text-primary: #ffffff;
+    --text-secondary: #87CEEB;
+    --text-light: rgba(255, 255, 255, 0.7);
+    --light-blue-bg: rgba(74, 144, 226, 0.1);
+    --light-blue-bg-medium: rgba(74, 144, 226, 0.15);
+    --light-blue-bg-strong: rgba(74, 144, 226, 0.25);
+  }
+  
+  .hero-image {
+    filter: brightness(0.4);
+  }
+  
+  .service-card,
+  .team-member,
+  .faq-item,
+  .contact-form {
+    background: #2a2a2a;
+    border: 1px solid rgba(74, 144, 226, 0.3);
+  }
+  
+  .form-control {
+    background: #333;
+    border-color: rgba(74, 144, 226, 0.3);
+    color: var(--text-primary);
+  }
+}
