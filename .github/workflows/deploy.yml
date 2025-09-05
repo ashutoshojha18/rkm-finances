@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -25,6 +25,9 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
+        env:
+          CI: false
+          PUBLIC_URL: /rkm-finances
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./build

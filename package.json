@@ -2,7 +2,7 @@
   "name": "rkm-finances",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://github.com/ashutoshojha18/rkm-finances",
+  "homepage": "https://ashutoshojha18.github.io/rkm-finances",
   "dependencies": {
     "framer-motion": "^10.0.0",
     "react": "^18.2.0",
